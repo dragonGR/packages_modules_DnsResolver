@@ -133,7 +133,6 @@ class DnsProxyListener : public FrameworkListener {
       public:
         ResNSendHandler(SocketClient* c, std::string msg, uint32_t flags,
                         const android_net_context& netcontext);
-        ~ResNSendHandler();
 
         void run();
         std::string threadName();
